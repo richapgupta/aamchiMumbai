@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Food Business</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Your Food Business</h1>
+        <!-- Navigation menu can be added here -->
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="menu">
+        <h2>Menu</h2>
+        <!-- Display your food items with images, descriptions, and prices -->
+        <div class="food-item">
+            <img src="food1.jpg" alt="Food Item 1">
+            <h3>Food Item 1</h3>
+            <p>Description of the dish. Lorem ipsum dolor sit amet.</p>
+            <p>$10.99</p>
+            <!-- Add a button to add to cart -->
+            <button onclick="addToCart('Food Item 1', 10.99)">Add to Cart</button>
+        </div>
+        <!-- Repeat the structure for other food items -->
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <!-- Display the items added to the cart -->
+        <ul id="cart-items"></ul>
+        <!-- Display total and checkout button -->
+        <p>Total: <span id="total-price">$0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us: your@email.com | Phone: 123-456-7890</p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
